@@ -9,42 +9,47 @@ Did you know The Python got his name not from the snake, but from Monty Python's
 ## The basics of Python
 
 In this section, you learned that:
+<br>
 
 Integers are for representing whole numbers:
-<code>
+<pre>
 rank = 10
 eggs = 12
 people = 3
-  </code>
-Floats represent continuous values:
+</pre>
+<br>
 
-<code>
+Floats represent continuous values:
+<pre>
 temperature = 10.2
 rainfall = 5.98
 elevation = 1031.88
-</code>
-Strings represent any text:
+</pre>
+<br>
 
-<code>
+Strings represent any text:
+<pre>
 message = "Welcome to our online shop!"
 name = "John"
 serial = "R001991981SW"
-</code>
+</pre>
 Lists represent arrays of values that may change during the course of the program:
 
 <code>
 members = ["Sim Soony", "Marry Roundknee", "Jack Corridor"]
 pixel_values = [252, 251, 251, 253, 250, 248, 247]
 </code>
-Dictionaries represent pairs of keys and values:
+<br>
 
-<code>
+Dictionaries represent pairs of keys and values:
+<pre>
 phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 volcano_elevations = {"Glacier Peak": 3213.9, "Rainer": 4392.1}
-</code>
-Keys of a dictionary can be extracted with:
+</pre>
+<br>
 
-<code>
+Keys of a dictionary can be extracted with:
+<pre>
 phone_numbers.keys()
 Values of a dictionary can be extracted with:
 </code>
@@ -54,11 +59,11 @@ phone_numbers.values()
 </code>
 Tuples represent arrays of values that are not to be changed during the course of the program:
 
-<code>
+<pre>
 vowels = ('a', 'e', 'i', 'o', 'u')
 one_digits = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 To find out what attributes a type has:
-</code>
+</pre>
 
 <code>
 dir(str)
@@ -67,16 +72,16 @@ dir(dict)
   
  help(list)
  help(list.values)
-</code>
+</pre>
 To find out what Python builtin functions there are:
 
-<code>
+<pre>
 dir(__builtins__)
-</code>
+</pre>
 Documentation for a Python command can be found with:
 
-<code>
+<pre>
 help(str)
 help(str.replace)
 help(dict.values)
-</code>
+</pre>
