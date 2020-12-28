@@ -6,6 +6,7 @@ Did you know That <strong>Python</strong> was first released in 1991? <strong>Py
 
 Did you know The Python got his name not from the snake, but from <strong>Monty Python's Flying Circus</strong>, a favorite comedy series of <strong>Guido van Rossum</strong>, the <strong>creator of Python</strong>.
 
+Did you know The <strong>Python</strong> comes pre-installed on <strong>Linux</strong> and <srong>Mac<//srong> operating systems. In May 2019, Windows 10 also launched an update that also has Python pre-installed. That is an added endorsement for Python.
 ## The basics of Python
 
 In this section, you learned that:
@@ -184,3 +185,65 @@ experience_years = 1.5
 print("Hi {}, you have {} years of experience".format(name, experience_years))
 </pre>
 Output: Hi Sim, you have 1.5 years of experience.
+
+## Looping
+In this section, you learned that:
+
+For loops are useful for executing a command over a large number of items.
+
+You can create a for loop like so:
+<pre>
+for letter in 'abc':
+    print(letter.upper())
+</pre>
+Output:
+
+A
+B
+C
+
+The name after for (e.g. letter) is just a variable name
+
+
+
+You can loop over dictionary keys:
+<pre>
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.keys():
+    print(value)
+</pre>
+Output:
+
+John Smith
+Marry Simpsons
+
+You can loop over dictionary values:
+<pre>
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.values():
+    print(value)
+</pre>
+Output:
+
++37682929928
++423998200919
+
+You can loop over dictionary items:
+<pre>
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for key, value in phone_numbers.items():
+    print(key, value)
+</pre>
+Output: 
+
+('John Smith', '+37682929928')
+
+('Marry Simpons', '+423998200919')
+
+
+While loops will run as long as a condition is true:
+<pre>
+while datetime.datetime.now() < datetime.datetime(2090, 8, 20, 19, 30, 20):
+    print("It's not yet 19:30:20 of 2090.8.20")
+</pre>
+The loop above will print out the string inside print() over and over again until the 20th of August, 2090.
