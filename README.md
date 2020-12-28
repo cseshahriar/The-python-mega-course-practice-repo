@@ -36,10 +36,10 @@ serial = "R001991981SW"
 </pre>
 Lists represent arrays of values that may change during the course of the program:
 
-<code>
+<pre>
 members = ["Sim Soony", "Marry Roundknee", "Jack Corridor"]
 pixel_values = [252, 251, 251, 253, 250, 248, 247]
-</code>
+</pre>
 <br>
 
 Dictionaries represent pairs of keys and values:
@@ -53,11 +53,11 @@ Keys of a dictionary can be extracted with:
 <pre>
 phone_numbers.keys()
 Values of a dictionary can be extracted with:
-</code>
+</pre>
 
-<code>
+<pre>
 phone_numbers.values()
-</code>
+</pre>
 Tuples represent arrays of values that are not to be changed during the course of the program:
 
 <pre>
@@ -66,7 +66,7 @@ one_digits = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 To find out what attributes a type has:
 </pre>
 
-<code>
+<pre>
 dir(str)
 dir(list)
 dir(dict)
@@ -127,7 +127,7 @@ if x == 1 and y==1:
     print("Yes")
 else:
     print("No")
-<pre>
+</pre>
 Output is Yes since both x and y are 1.
 
 Use the or operator to check if at least one condition is True:
@@ -161,10 +161,13 @@ In this section, you learned that:
 A Python program can get user input via the input function:
 
 The input function halts the execution of the program and gets text input from the user:
+
 <pre>
 name = input("Enter your name: ")
 </pre>
+
 The input function converts any input to a string, but you can convert it back to int or float:
+
 <pre>
 experience_months = input("Enter your experience in months: ")
 experience_years = int(experience_months) / 12
