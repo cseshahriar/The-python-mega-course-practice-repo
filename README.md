@@ -322,3 +322,31 @@ Output: Sim
 
 Here's a summary of function elements:
 
+## file reading and writing 
+In this section, you learned that:
+
+You can read an existing file with Python:
+<pre>
+with open("file.txt") as file:
+    content = file.read()
+</pre>
+You can create a new file with Python and write some text on it:
+
+<pre>
+with open("file.txt", "w") as file:
+    content = file.write("Sample text")
+</pre>
+You can append text to an existing file without overwriting it:
+
+<pre>
+with open("file.txt", "a") as file:
+    content = file.write("More sample text")
+</pre>
+You can both append and read a file with:
+
+<pre>
+with open("file.txt", "a+") as file:
+    content = file.write("Even more sample text")
+    file.seek(0)
+    content = file.read()
+</pre>
