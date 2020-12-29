@@ -7,6 +7,10 @@ Did you know That <strong>Python</strong> was first released in 1991? <strong>Py
 Did you know The Python got his name not from the snake, but from <strong>Monty Python's Flying Circus</strong>, a favorite comedy series of <strong>Guido van Rossum</strong>, the <strong>creator of Python</strong>.
 
 Did you know The <strong>Python</strong> comes pre-installed on <strong>Linux</strong> and <srong>Mac<//srong> operating systems. In May 2019, Windows 10 also launched an update that also has Python pre-installed. That is an added endorsement for Python.
+
+Did you know The <strong>Python</strong> was the sixth most popular programming language in 2010 on <strong>StackOverflow</strong>. It continually went up in the ranks to be the most popular among all in <strong>2018</strong>
+
+
 ## The basics of Python
 
 In this section, you learned that:
@@ -271,3 +275,50 @@ List comprehension with an if and else condition:
 [i*2 if i>0 else 0 for i in [1, -2, 10]]
 Output: [2, 0, 20]
 </pre>
+
+## More Function 
+In this section, you learned that:
+
+Functions can have more than one parameter:
+
+<pre>
+def volume(a, b, c):
+    return a * b * c
+</pre>
+Functions can have default parameters (e.g. coefficient):
+
+<pre>
+def converter(feet, coefficient = 3.2808):
+    meters = feet / coefficient
+    return meters
+
+print(converter(10))
+</pre>
+Output: 3.0480370641306997
+
+Arguments can be passed as non-keyword (positional) arguments (e.g. a) or keyword arguments (e.g. b=2 and c=10):
+<pre>
+def volume(a, b, c):
+    return a * b * c
+
+print(volume(1, b=2, c=10))
+</pre>
+An *args parameter allows the  function to be called with an arbitrary number of non-keyword arguments:
+<pre>
+def find_max(*args):
+    return max(args)
+print(find_max(3, 99, 1001, 2, 8))
+</pre>
+Output: 1001
+
+An **kwargs parameter allows the function to be called with an arbitrary number of keyword arguments:
+<pre>
+def find_winner(**kwargs):
+    return max(kwargs, key = kwargs.get)
+
+print(find_winner(Andy = 17, Marry = 19, Sim = 45, Kae = 34))
+</pre>
+Output: Sim
+
+Here's a summary of function elements:
+
