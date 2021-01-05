@@ -47,6 +47,15 @@ print(str_split)
 str_join = ' '.join(b)
 print(str_join)
 
+""" all , returns true if the iterable object is empty """
+my_list = [0, 2, 2]
+a = all(my_list)
+print(a)
+
+""" any , returns False if iterable is empty """
+my_tuple = (0, 1, False)
+a = any(my_tuple)
+print(a)
 
 """ Methods for Python Lists """
 dog = ['Freddie', 9, True, 1.1, 2001, ['bone', 'little ball']]
@@ -59,6 +68,40 @@ print(dog)
 print(dog.count('Freddie'))
 dog.clear()
 print(dog)
+
+""" The delattr() function help us to remove the defined attribute from the declared object. """
+
+print('delattr')
+
+
+class User:
+    name = "Jaydon"
+    mob = 182182922
+    country = "Canada"
+
+
+delattr(User, 'name')
+print(User)
+
+"""  getattr() This function gets the value of the defined attribute from the particular object """
+
+print("getattr")
+
+
+class Student:
+    name = "Ann"
+    age = 28
+    country = "USA"
+
+
+x = getattr(Student, 'age')
+
+print(x)
+
+x = hasattr(Student, 'age')
+print(x)
+
+print(divmod(6, 2))
 
 """ Methods for Python Dictionaries """
 dog_dict = {
@@ -74,4 +117,3 @@ print(dog_dict.keys())
 print(dog_dict.values())
 print(dog_dict.items())
 print(dog_dict.clear())
-print(dog_dict['name'])
