@@ -1,9 +1,7 @@
-import helper
 import logging
+import logging.config
 
-FORMAT = '%(asctime)-15s %(name)s %(levelname)-8s %(message)s'
-logging.basicConfig(
-    level=logging.DEBUG,
-    format=FORMAT,
-    datefmt='%m/%d/%Y %H:%M%S'
-)
+logging.config.fileConfig('logging.conf')
+
+logger = logging.getLogger('simpleExample')
+logger.debug('Testing logging')
